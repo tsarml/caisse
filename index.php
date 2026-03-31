@@ -1,16 +1,17 @@
 <?php
 session_start();
+require 'app/views/layouts/main.php';
 require 'vendor/autoload.php';
 require 'config/database.php';
 
 
 Flight::route('GET /', function() {
-    $controller = new app\controllers\CaisseController();
+    $controller = new App\Controllers\CaisseController();
     $controller->index();
 });
 
 Flight::route('POST /caisse/choisir', function() {
-    $controller = new app\controllers\CaisseController();
+    $controller = new App\Controllers\CaisseController();
     $controller->choisir();
 });
 #
