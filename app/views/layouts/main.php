@@ -20,7 +20,7 @@
             <a #href>Menu 3</a>
          </ul>
         </aside>
-
+   
         <main>
             <?php require $view; ?>
         </main>
