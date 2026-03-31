@@ -13,7 +13,7 @@ Flight::route('POST /caisse/choisir', function() {
     $controller = new app\controllers\CaisseController();
     $controller->choisir();
 });
-
+#
 
 
 Flight::start();
