@@ -13,7 +13,6 @@ class CaisseController  {
     public function index() {
         $caisses = $this->model->getAll();
         $view = 'app/views/caisse/index.php';
-        require 'app/views/layouts/main.php';
     }
 
     public function choisir() {
