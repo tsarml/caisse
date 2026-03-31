@@ -31,3 +31,14 @@ CREATE TABLE achat (
     FOREIGN KEY (caisse_id)  REFERENCES caisse(id),
     FOREIGN KEY (produit_id) REFERENCES produit(id)
 ) ENGINE=InnoDB;
+
+INSERT INTO produit (designation, prix, qte_stock) VALUES
+('Biscuit', 1000, 50),
+('Pain', 400, 100),
+('Eau minérale', 300, 200),
+('Lait', 800, 75),
+('Riz 1kg', 1200, 60);
+
+INSERT INTO caisse (numero) VALUES
+('Caisse 1'),
+('Caisse 2');
